@@ -13,7 +13,7 @@ If you do run into errors while setting up the script, please make sure you've f
 Before running the script, you **must** edit the config file first for the script to function properly.
 
 The most important parts you'll need to edit are the `tags` and `token` variables. I'll explain each variable in the config here:
-- `tags`: A dictionary with server tags the script will rotate through, and their corresponding ID.
+- `tags` — A dictionary with server tags the script will rotate through, and their corresponding ID.
 
   To get the ID of a server tag, you'll need to do the following:
   1. Go to your Discord settings > Profiles.
@@ -33,7 +33,7 @@ The most important parts you'll need to edit are the `tags` and `token` variable
   }
   ```
 
-- `delay`: Self-explanatory, the script changes your server tag once every N seconds, N being the delay.
+- `delay` — Self-explanatory, the script changes your server tag once every N seconds, N being the delay.
 
   The default value in the config is `300`, which means 300 seconds, aka 5 minutes.
 
@@ -42,9 +42,8 @@ The most important parts you'll need to edit are the `tags` and `token` variable
   "delay": 300
   ```
 
-- `token`: A string that contains your Discord token.
-> [!WARNING]
-> **Never share your Discord token with anyone you don't trust!** They can use your token to log into your account, bypassing any kind of authentication.
+- `token` — A string that contains your Discord token. \
+  <ins>**WARNING!**</ins> **Never share your Discord token with anyone you don't trust!** They can use your token to log into your account, bypassing any kind of authentication.
 
   To get your Discord token, you can follow the same steps shown for getting the ID of a server tag. \
   But instead of going to the Payload tab, you would want to:
@@ -54,6 +53,11 @@ The most important parts you'll need to edit are the `tags` and `token` variable
      That should be your Discord token!
   
   It usually looks something like this: `NzI4NjU1MDA5NzU5MzYzMTkx.xxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx` (censored so that i don't get my account hacked lol)
+
+  **Format:**
+  ```json
+  "token": "NzI4NjU1MDA5NzU5MzYzMTkx.xxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  ```
 
 Now you know how to edit the config file and finish setting up the script!
 
