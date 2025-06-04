@@ -13,14 +13,12 @@ If you do run into errors while setting up the script, please make sure you've f
 Before running the script, you **must** edit the config file first for the script to function properly.
 
 The most important parts you'll need to edit are the `tags` and `token` variables. I'll explain each variable in the config here:
-- `tags` — A dictionary with server tags the script will rotate through, and their corresponding ID.
+- `tags` — A dictionary with server tags the script will rotate through, and their corresponding server ID.
 
   To get the ID of a server tag, you'll need to do the following:
-  1. Go to your Discord settings > Profiles.
-  2. Open Devtools by pressing `Ctrl + Shift + I` on your keyboard. Learn how to enable Devtools [here](https://github.com/brunos3d/discord-enable-devtools).
-  3. Go to the Network tab, select a server tag you want to get the ID of in Discord, then click "Save Changes".
-  4. In Devtools, find a request called `clan`, click on it, go to the Payload tab, and find the value of `identity_guild_id`. \
-     The long string of numbers should be the ID of the server tag you selected!
+  1. Enable Developer Mode in Discord by going to your settings > Advanced and enable "Developer Mode".
+  2. Right-click the icon of the server you want to get the ID of, and click "Copy Server ID".
+     The long string of numbers in your clipboard should be the ID of the server tag!
 
   Make sure to remove the example server tags in the config first, since those are there to show you how to add your own server tags.
 
@@ -45,11 +43,12 @@ The most important parts you'll need to edit are the `tags` and `token` variable
 - `token` — A string that contains your Discord token. \
   <ins>**WARNING!**</ins> **Never share your Discord token with anyone you don't trust!** They can use your token to log into your account, bypassing any kind of authentication.
 
-  To get your Discord token, you can follow the same steps shown for getting the ID of a server tag. \
-  But instead of going to the Payload tab, you would want to:
-  1. Go to the Headers tab.
-  2. Scroll down until you find a header called "Authorization".
-  3. Copy the long string of numbers and letters next to it. \
+  To get your Discord token, you'll have to do the following:
+  1. Open Devtools in Discord and go to the Network tab. Learn how to enable Devtools [here](https://github.com/brunos3d/discord-enable-devtools).
+  2. Start typing for a few seconds in any channel.
+  3. Once you see a request called `typing` in Devtools, click on it.
+  4. Scroll down in the newly opened menu until you find a header called "Authorization".
+  5. Copy the long string of numbers and letters next to it. \
      That should be your Discord token!
   
   It usually looks something like this: `NzI4NjU1MDA5NzU5MzYzMTkx.xxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx` (censored so that i don't get my account hacked lol)
@@ -64,7 +63,7 @@ Now you know how to edit the config file and finish setting up the script!
 ## Conclusion
 I hope you liked using my script and maybe also flexed your tags to your friends, and if you did, then make sure to star this repo, i would appreciate it ^_^
 
-(i've spent 2 hours writing this README till 4:30 AM so please do star this repo, thanks)
+(i spent 2 hours writing this README till 4:30 AM so please do star this repo, thanks)
 
 ## Contact Me
 In case you have any questions or suggestions for the script, you can find me on Discord [here](https://discord.com/users/728655009759363191), DMs are always open!
