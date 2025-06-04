@@ -17,7 +17,7 @@ The most important parts you'll need to edit are the `tags` and `token` variable
 
   To get the ID of a server tag, you'll need to do the following:
   1. Enable Developer Mode in Discord by going to your settings > Advanced and enable "Developer Mode".
-  2. Right-click the icon of the server you want to get the ID of, and click "Copy Server ID".
+  2. Right-click the icon of the server you want to get the ID of, and click "Copy Server ID". \
      The long string of numbers in your clipboard should be the ID of the server tag!
 
   Make sure to remove the example server tags in the config first, since those are there to show you how to add your own server tags.
