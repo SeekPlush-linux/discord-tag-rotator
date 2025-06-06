@@ -9,6 +9,9 @@ A simple Python script that rotates through your existing server tags on Discord
 
 If you do run into errors while setting up the script, please make sure you've followed the above steps accordingly.
 
+> [!WARNING]
+> **This script uses the Discord API to change your tag on your profile, which is against Discord's TOS and could lead to account suspension. I am not responsible for any damages caused by this script.**
+
 ## Editing the config file
 Before running the script, you **must** edit the config file first for the script to function properly.
 
