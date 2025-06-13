@@ -1,16 +1,16 @@
 # Discord Server Tag Rotator
 A simple Python script that rotates through your existing server tags on Discord
 
+> [!WARNING]
+> **This script uses Discord's API to change your tag on your profile, which is against Discord's TOS and could lead to account suspension. I am not responsible for any damages caused by this script. You have been warned.**
+
 ## Installation
 1. **Clone this repo**, either by downloading the ZIP through Code > Download ZIP, or by entering `git clone https://github.com/SeekPlush-linux/discord-tag-rotator` into your terminal.
-2. **Edit the config file** `config.json` and add server tags you want to rotate through. See the **Editing the config file** section to learn how to edit the config file.
+2. **Edit the config file** `config.json` and add server tags you want to rotate through. See the **[Editing the config file](https://github.com/SeekPlush-linux/discord-tag-rotator#editing-the-config-file)** section to learn how to edit the config file.
 3. **Install the required Python libraries** by entering `pip install -r requirements.txt` into your terminal, in the folder where the script is located. (Make sure you have Python installed!)
 4. **Run the Python script** `server-tag-rotator.py`, and if there are no errors, congratulations!
 
-If you do run into errors while setting up the script, please make sure you've followed the above steps accordingly.
-
-> [!WARNING]
-> **This script uses the Discord API to change your tag on your profile, which is against Discord's TOS and could lead to account suspension. I am not responsible for any damages caused by this script.**
+If you run into errors while setting up the script, please make sure you've followed the above steps correctly.
 
 ## Editing the config file
 Before running the script, you **must** edit the config file first for the script to function properly.
