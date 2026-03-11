@@ -1,11 +1,14 @@
 import requests
 import time
-from rich import print
 from datetime import datetime
 import random
 import json
+from rich.console import Console
 
-VERSION = "v1.3.0"
+con = Console(highlight=False)
+print = con.print
+
+VERSION = "v1.3.1"
 
 with open("config.json") as f:
     config = json.load(f)
